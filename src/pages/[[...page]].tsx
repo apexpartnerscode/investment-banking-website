@@ -46,7 +46,7 @@ export async function getStaticPaths() {
 }
 
 Builder.registerComponent(
-  dynamic(() => import('../components/Header/header')),
+  dynamic(() => import('../components/Header')),
   {
     name: 'Header',
     inputs: [
@@ -64,6 +64,19 @@ Builder.registerComponent(
     ],
     image:
       'https://tabler-icons.io/static/tabler-icons/icons-png/3d-cube-sphere-off.png',
+  },
+)
+Builder.registerComponent(
+  dynamic(() => import('../components/Hero')),
+  {
+    name: 'Hero',
+    inputs: [
+      { name: 'heroTitle', type: 'text' },
+      { name: 'heroSubtitle', type: 'text' },
+      { name: 'heroButton', type: 'text' },
+      { name: 'heroImg', type: 'file' },
+    ],
+    image: '',
   },
 )
 
