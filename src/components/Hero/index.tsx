@@ -6,10 +6,12 @@ interface HeroProps {
   heroTitle: string
   heroSubtitle: string
   heroButton?: string
+  heroButtonHref: string
 }
 
 export default function Hero({
   heroButton,
+  heroButtonHref,
   heroImg,
   heroSubtitle,
   heroTitle,
@@ -26,7 +28,7 @@ export default function Hero({
               <h1 className={styles.title}>{heroTitle}</h1>
               <p className={styles.heroDescription}>{heroSubtitle}</p>
               {heroButton && (
-                <Link href="" className={styles.heroButton}>
+                <Link href={heroButtonHref} className={styles.heroButton}>
                   {heroButton}
                 </Link>
               )}

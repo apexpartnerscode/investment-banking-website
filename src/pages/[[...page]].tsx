@@ -74,6 +74,7 @@ Builder.registerComponent(
       { name: 'heroTitle', type: 'text' },
       { name: 'heroSubtitle', type: 'text' },
       { name: 'heroButton', type: 'text' },
+      { name: 'heroButtonHref', type: 'text' },
       { name: 'heroImg', type: 'file' },
     ],
     image: '',
