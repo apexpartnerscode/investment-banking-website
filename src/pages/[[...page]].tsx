@@ -73,11 +73,24 @@ Builder.registerComponent(
     inputs: [
       { name: 'heroTitle', type: 'text' },
       { name: 'heroSubtitle', type: 'text' },
-      { name: 'heroButton', type: 'text' },
+      { name: 'heroButtonText', type: 'text' },
       { name: 'heroButtonHref', type: 'text' },
       { name: 'heroImg', type: 'file' },
     ],
     image: '',
+  },
+)
+
+Builder.registerComponent(
+  dynamic(() => import('../components/Button')),
+  {
+    name: 'Button',
+    inputs: [
+      { name: 'ButtonText', type: 'text' },
+      { name: 'ButtonHref', type: 'text' },
+    ],
+    image:
+      'https://e7.pngegg.com/pngimages/642/700/png-clipart-lupin-oy-button-html-submit-button-text-rectangle-thumbnail.png',
   },
 )
 

@@ -1,17 +1,17 @@
-import Link from 'next/link'
 import styles from './styles.module.css'
+import Button from '../Button'
 
 interface HeroProps {
   heroImg: string
   heroTitle: string
   heroSubtitle: string
-  heroButton?: string
+  heroButtonText?: string
   heroButtonHref: string
 }
 
 export default function Hero({
-  heroButton,
-  heroButtonHref,
+  heroButtonText,
+  heroButtonHref = '',
   heroImg,
   heroSubtitle,
   heroTitle,
@@ -27,10 +27,11 @@ export default function Hero({
             <div className={styles.titleWrapper}>
               <h1 className={styles.title}>{heroTitle}</h1>
               <p className={styles.heroDescription}>{heroSubtitle}</p>
-              {heroButton && (
-                <Link href={heroButtonHref} className={styles.heroButton}>
-                  {heroButton}
-                </Link>
+              {heroButtonText && (
+                <Button
+                  heroButtonText={heroButtonText}
+                  heroButtonHref={heroButtonHref}
+                />
               )}
             </div>
           </div>

@@ -1,0 +1,13 @@
+.heroButtonText {
+  width: fit-content;
+  color: #FFF;
+  text-align: center;
+  font-size: 0.875rem;
+  font-family: Manrope;
+  font-weight: 800;
+  border-radius: 3px;
+  background: var(--secondary);
+  padding: 1rem 2.25rem;
+  text-decoration: none;
+  margin-top: 0.5rem;
+}
