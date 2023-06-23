@@ -94,6 +94,18 @@ Builder.registerComponent(
   },
 )
 
+Builder.registerComponent(
+  dynamic(() => import('../components/HighlightCard')),
+  {
+    name: 'Card',
+    inputs: [
+      { name: 'cardIcon', type: 'file' },
+      { name: 'cardText', type: 'text' },
+    ],
+    image: '',
+  },
+)
+
 export default function Page({
   page,
 }: InferGetStaticPropsType<typeof getStaticProps>) {

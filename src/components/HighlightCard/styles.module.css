@@ -1,0 +1,26 @@
+.cardWrapper {
+  width: 18.625rem;
+  height: 18.75rem;
+  border-radius: 0.3125rem;
+  border: 0.0625rem solid var(--gray-900);
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.cardIcon {
+  padding-top: 3rem;
+  padding-left: 1.75rem;
+}
+
+.cardTextWrapper {
+  padding: 0 1.75rem 2.25rem 1rem;
+}
+
+.cardText {
+  color: var(--primary);
+  font-size: 1rem;
+  line-height: 150%;
+}

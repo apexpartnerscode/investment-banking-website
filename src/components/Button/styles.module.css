@@ -10,4 +10,10 @@
   padding: 1rem 2.25rem;
   text-decoration: none;
   margin-top: 0.5rem;
+  transition: all 0.2s;
+}
+
+.heroButtonText:hover {
+  background: var(--primary);
+  border: 1px solid var(--white);
 }
