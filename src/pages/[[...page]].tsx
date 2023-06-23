@@ -46,7 +46,7 @@ export async function getStaticPaths() {
 }
 
 Builder.registerComponent(
-  dynamic(() => import('../components/header')),
+  dynamic(() => import('../components/Header/header')),
   {
     name: 'Header',
     inputs: [
