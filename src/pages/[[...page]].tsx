@@ -159,6 +159,15 @@ Builder.registerComponent(
   },
 )
 
+Builder.registerComponent(
+  dynamic(() => import('../components/Footer')),
+  {
+    name: 'Footer',
+    inputs: [],
+    image: '',
+  },
+)
+
 export default function Page({
   page,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
