@@ -11,6 +11,9 @@
   text-decoration: none;
   margin-top: 0.5rem;
   transition: background 0.2s;
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
 
 .heroButtonText:hover {

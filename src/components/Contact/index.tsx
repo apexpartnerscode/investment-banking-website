@@ -1,5 +1,6 @@
 import Button from '../Button'
 import styles from './styles.module.css'
+import InputMask from 'react-input-mask'
 
 export default function Contact() {
   return (
@@ -24,22 +25,32 @@ export default function Contact() {
       <form className={styles.formContainer}>
         <label className={styles.formLabel} htmlFor="name">
           Nome
-          <input className={styles.input} id="name" type="text" />
+          <input required className={styles.input} id="name" type="text" />
         </label>
         <label className={styles.formLabel} htmlFor="email">
           E-mail
-          <input className={styles.input} id="email" type="email" />
+          <input required className={styles.input} id="email" type="email" />
         </label>
         <label className={styles.formLabel} htmlFor="phone">
           Celular
-          <input className={styles.input} id="phone" type="text" />
+          <InputMask
+            mask={'(99) 99999-9999'}
+            className={styles.input}
+            id="phone"
+            type="text"
+            required
+          />
         </label>
         <label className={styles.formLabel} htmlFor="message">
           Mensagem
-          <textarea rows={4} className={styles.input} id="message" />
+          <textarea required rows={4} className={styles.input} id="message" />
         </label>
         <div className={styles.sendButton}>
-          <Button heroButtonHref="#" heroButtonText="Fale conosco" />
+          <Button
+            linkOrButton="button"
+            heroButtonHref="#"
+            heroButtonText="Fale conosco"
+          />
         </div>
       </form>
     </section>
