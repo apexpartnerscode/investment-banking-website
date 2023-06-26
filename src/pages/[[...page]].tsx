@@ -106,6 +106,28 @@ Builder.registerComponent(
   },
 )
 
+Builder.registerComponent(
+  dynamic(() => import('../components/HighlightsSection')),
+  {
+    name: 'HighlightsSection',
+    inputs: [
+      { name: 'card1Icon', type: 'file' },
+      { name: 'card1Text', type: 'string' },
+      { name: 'card2Icon', type: 'file' },
+      { name: 'card2Text', type: 'string' },
+      { name: 'card3Icon', type: 'file' },
+      { name: 'card3Text', type: 'string' },
+      { name: 'card4Icon', type: 'file' },
+      { name: 'card4Text', type: 'string' },
+      { name: 'card5Icon', type: 'file' },
+      { name: 'card5Text', type: 'string' },
+      { name: 'card6Icon', type: 'file' },
+      { name: 'card6Text', type: 'string' },
+    ],
+    image: '',
+  },
+)
+
 export default function Page({
   page,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
