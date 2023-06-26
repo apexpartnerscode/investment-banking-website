@@ -2,23 +2,36 @@ import Button from '../Button'
 import styles from './styles.module.css'
 import InputMask from 'react-input-mask'
 
-export default function Contact() {
+interface ContactProps {
+  title: string
+  description: string
+  contactMailTitle: string
+  contactMailDescription: string
+  contactPhoneTitle: string
+  contactPhoneDescription: string
+}
+
+export default function Contact({
+  contactMailDescription,
+  contactMailTitle,
+  contactPhoneTitle,
+  contactPhoneDescription,
+  title,
+}: ContactProps) {
   return (
     <section className={styles.formWrapper}>
       <div className={styles.textWrapper}>
-        <h3 className={styles.title}>
-          Dúvidas ou informações? Entre em contato com o nosso time
-        </h3>
+        <h3 className={styles.title}>{title}</h3>
         <div className={styles.contactMail}>
-          <h4 className={styles.contactMailTile}>Fale Conosco:</h4>
+          <h4 className={styles.contactMailTile}>{contactPhoneTitle}</h4>
           <p className={styles.contactMailDescription}>
-            +55 27 3024-9999 <br /> faleconosco@apexpartners.com.br
+            {contactPhoneDescription}
           </p>
         </div>
         <div className={styles.contactMail}>
-          <h4 className={styles.contactMailTile}>Ouvidoria:</h4>
+          <h4 className={styles.contactMailTile}>{contactMailTitle}</h4>
           <p className={styles.contactMailDescription}>
-            ouvidoria@apexpartners.com.br
+            {contactMailDescription}
           </p>
         </div>
       </div>

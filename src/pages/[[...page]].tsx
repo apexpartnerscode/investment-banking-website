@@ -147,7 +147,14 @@ Builder.registerComponent(
   dynamic(() => import('../components/Contact')),
   {
     name: 'Contact',
-    inputs: [],
+    inputs: [
+      { name: 'title', type: 'string' },
+      { name: 'description', type: 'string' },
+      { name: 'contactMailTitle', type: 'string' },
+      { name: 'contactMailDescription', type: 'string' },
+      { name: 'contactPhoneTitle', type: 'string' },
+      { name: 'contactPhoneDescription', type: 'string' },
+    ],
     image: '',
   },
 )
