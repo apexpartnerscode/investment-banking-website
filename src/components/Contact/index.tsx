@@ -21,7 +21,7 @@ export default function Contact({
   return (
     <section className={styles.formWrapper}>
       <div className={styles.textWrapper}>
-        <h3 className={styles.title}>{title}</h3>
+        <h2 className={styles.title}>{title}</h2>
         <div className={styles.contactMail}>
           <h4 className={styles.contactMailTile}>{contactPhoneTitle}</h4>
           <p className={styles.contactMailDescription}>

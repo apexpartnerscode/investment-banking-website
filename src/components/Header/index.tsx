@@ -24,7 +24,7 @@ export default function Header(props: HeaderProps) {
           src={props.logoImg}
           alt="Logo"
           width={80}
-          height={26}
+          height={28}
           className={styles.logo}
         />
       </Link>

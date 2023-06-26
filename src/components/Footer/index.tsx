@@ -88,6 +88,7 @@ export default function Footer({
                 }
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="visit our Instagram page"
               >
                 <AiOutlineInstagram size={40} color="#fff" />
               </a>
@@ -95,6 +96,7 @@ export default function Footer({
                 href={
                   socialNetworksLinks[0] ? socialNetworksLinks[0].LinkedIn : ''
                 }
+                aria-label="visit our LinkedIn page"
                 target="_blank"
                 rel="noopener noreferrer"
               >
