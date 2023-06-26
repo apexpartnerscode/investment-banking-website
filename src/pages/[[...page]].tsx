@@ -128,6 +128,21 @@ Builder.registerComponent(
   },
 )
 
+Builder.registerComponent(
+  dynamic(() => import('../components/SolutionsSection')),
+  {
+    name: 'SolutionsSection',
+    inputs: [
+      { name: 'backgroundImage', type: 'file' },
+      { name: 'linkIcon', type: 'file' },
+      { name: 'title', type: 'string' },
+      { name: 'linkText', type: 'string' },
+      { name: 'linkHref', type: 'string' },
+    ],
+    image: '',
+  },
+)
+
 export default function Page({
   page,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
