@@ -83,14 +83,18 @@ export default function Footer({
             <h4 className={styles.footerSubTitle}>Redes Sociais</h4>
             <div className={styles.linksList} style={{ flexDirection: 'row' }}>
               <a
-                href={socialNetworksLinks[0].Instagram}
+                href={
+                  socialNetworksLinks[0] ? socialNetworksLinks[0].Instagram : ''
+                }
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <AiOutlineInstagram size={40} color="#fff" />
               </a>
               <a
-                href={socialNetworksLinks[0].LinkedIn}
+                href={
+                  socialNetworksLinks[0] ? socialNetworksLinks[0].LinkedIn : ''
+                }
                 target="_blank"
                 rel="noopener noreferrer"
               >
