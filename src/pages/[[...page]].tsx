@@ -143,6 +143,15 @@ Builder.registerComponent(
   },
 )
 
+Builder.registerComponent(
+  dynamic(() => import('../components/Contact')),
+  {
+    name: 'Contact',
+    inputs: [],
+    image: '',
+  },
+)
+
 export default function Page({
   page,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
