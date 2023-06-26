@@ -163,7 +163,51 @@ Builder.registerComponent(
   dynamic(() => import('../components/Footer')),
   {
     name: 'Footer',
-    inputs: [],
+    inputs: [
+      { name: 'apexLogo', type: 'file' },
+      {
+        name: 'siteMapLinks',
+        type: 'list',
+        subFields: [
+          { name: 'link1', type: 'string' },
+          { name: 'link1Href', type: 'string' },
+          { name: 'link2', type: 'string' },
+          { name: 'link2Href', type: 'string' },
+          { name: 'link3', type: 'string' },
+          { name: 'link3Href', type: 'string' },
+          { name: 'link4', type: 'string' },
+          { name: 'link4Href', type: 'string' },
+          { name: 'link5', type: 'string' },
+          { name: 'link5Href', type: 'string' },
+        ],
+      },
+      {
+        name: 'locationsLinks',
+        type: 'list',
+        subFields: [
+          { name: 'link1', type: 'string' },
+          { name: 'link1Href', type: 'string' },
+          { name: 'link2', type: 'string' },
+          { name: 'link2Href', type: 'string' },
+          { name: 'link3', type: 'string' },
+          { name: 'link3Href', type: 'string' },
+          { name: 'link4', type: 'string' },
+          { name: 'link4Href', type: 'string' },
+        ],
+      },
+      {
+        name: 'socialNetworksLinks',
+        type: 'list',
+        subFields: [
+          { name: 'Instagram', type: 'string' },
+          { name: 'LinkedIn', type: 'string' },
+        ],
+      },
+      { name: 'phoneNumber', type: 'string' },
+      { name: 'contactEmail', type: 'string' },
+      { name: 'ouvidoriaEmail', type: 'string' },
+      { name: 'copyWriteYear', type: 'string' },
+    ],
     image: '',
   },
 )
