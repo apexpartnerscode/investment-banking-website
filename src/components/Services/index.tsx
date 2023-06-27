@@ -25,7 +25,6 @@ export default function Services({
   linkUrl,
 }: ServicesProps) {
   const flexDirection = imageRightSide ? `row-reverse` : `row`
-  console.log(list)
   return (
     <div style={{ backgroundColor: `${hexBackgroundColor || '#fff'}` }}>
       <div
