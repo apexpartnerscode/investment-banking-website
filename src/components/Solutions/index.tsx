@@ -9,7 +9,7 @@ export default function Solutions() {
         <h2 className={styles.title}>
           Soluções completas para sócios e empresas
         </h2>
-        <Link href="" className={styles.link}>
+        <Link href="/contact" className={styles.link}>
           Saiba mais
           <Image
             src="/icons/arrow-right.svg"
