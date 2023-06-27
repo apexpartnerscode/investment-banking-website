@@ -25,7 +25,7 @@ export default function WhoWeAre({ image }: WhoWeAreProps) {
           em M&A nos permite oferecer soluções personalizadas e 100% alinhadas
           com os interesses de nossos clientes.
         </p>
-        <Link className={styles.contactLink} href="">
+        <Link className={styles.contactLink} href="/contact">
           Fale com nosso time
           <Image
             src="/icons/arrow-right.svg"
