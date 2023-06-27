@@ -123,6 +123,7 @@ Builder.registerComponent(
       { name: 'card5Text', type: 'string' },
       { name: 'card6Icon', type: 'file' },
       { name: 'card6Text', type: 'string' },
+      { name: 'buttonHref', type: 'string' },
     ],
     image: '',
   },
@@ -134,7 +135,6 @@ Builder.registerComponent(
     name: 'SolutionsSection',
     inputs: [
       { name: 'backgroundImage', type: 'file' },
-      { name: 'linkIcon', type: 'file' },
       { name: 'title', type: 'string' },
       { name: 'linkText', type: 'string' },
       { name: 'linkHref', type: 'string' },
