@@ -160,6 +160,14 @@ Builder.registerComponent(
 )
 
 Builder.registerComponent(
+  dynamic(() => import('../components/WhoWeAre')),
+  {
+    name: 'WhoWeAre',
+    inputs: [{ name: 'image', type: 'file' }],
+    image: '',
+  },
+)
+Builder.registerComponent(
   dynamic(() => import('../components/Footer')),
   {
     name: 'Footer',

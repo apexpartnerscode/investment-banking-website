@@ -1,0 +1,49 @@
+.wrapper {
+  width: 100%;
+  max-width: 58.75rem;
+  margin: 4.5rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 50%;
+}
+
+.leadText {
+  color: var(--secondary);
+  font-size: 0.875rem;
+  font-weight: 800;
+}
+
+.title {
+  color: var(--primary);
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-top: 0.625rem;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  color: var(--primary);
+  font-size: 0.875rem;
+  margin-top: 1.5rem;
+}
+
+.contactLink {
+  display: flex;
+  align-items: center;
+  color: var(--secondary);
+  font-size: 0.875rem;
+  font-weight: 800;
+  margin-top: 2rem;
+  text-decoration: none;
+  gap: 0.75rem
+}
+
+.contactLink:hover {
+  color: var(--primary);
+}
