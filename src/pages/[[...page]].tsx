@@ -167,6 +167,15 @@ Builder.registerComponent(
     image: '',
   },
 )
+
+Builder.registerComponent(
+  dynamic(() => import('../components/Solutions')),
+  {
+    name: 'Solutions',
+    inputs: [],
+    image: '',
+  },
+)
 Builder.registerComponent(
   dynamic(() => import('../components/Footer')),
   {

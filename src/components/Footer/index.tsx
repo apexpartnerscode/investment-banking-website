@@ -61,7 +61,11 @@ export default function Footer({
             <h4 className={styles.footerSubTitle}>Mapa do site</h4>
             <div className={styles.linksList}>
               {formattedSiteMapLinks.map((link, index) => (
-                <Link key={index} className={styles.link} href={link.href}>
+                <Link
+                  key={index}
+                  className={styles.link}
+                  href={link.href ?? ''}
+                >
                   {link.name}
                 </Link>
               ))}
@@ -72,7 +76,11 @@ export default function Footer({
               <h4 className={styles.footerSubTitle}>Localizações</h4>
               <div className={styles.linksList}>
                 {formattedLocationsLinks.map((link, index) => (
-                  <Link key={index} className={styles.link} href={link.href}>
+                  <Link
+                    key={index}
+                    className={styles.link}
+                    href={link.href ?? ''}
+                  >
                     {link.name}
                   </Link>
                 ))}

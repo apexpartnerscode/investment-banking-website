@@ -1,0 +1,78 @@
+.wrapper {
+  width: 100%;
+  max-width: 58.75rem;
+  margin: 5rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.description {
+  width: 100%;
+  max-width: 50%;
+}
+
+.title {
+  color: var(--primary);
+  font-size: 2.125rem;
+  max-width: 23.3125rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  color: var(--secondary);
+  font-size: 0.875rem;
+  font-weight: 800;
+  gap: 1rem;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.link:hover {
+  color: var(--primary);
+}
+
+.solutions {
+  width: 100%;
+  max-width: 50%;
+}
+
+.solutionBox {
+  width: 100%;
+  padding-block: 1.81rem;
+  padding-left: 2.69rem;
+}
+
+.fusoes {
+  background-color: var(--primary);
+}
+
+.captacao {
+  background-color: var(--blue-700);
+}
+
+.mercado {
+  background-color: var(--secondary);
+}
+
+.divida {
+  background-color: var(--blue-300);
+}
+
+.avaliacao {
+  background-color: var(--blue-100);
+}
+
+.whiteText {
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.blueText {
+  color: #002060;
+  font-size: 1rem;
+  font-weight: 800;
+}
