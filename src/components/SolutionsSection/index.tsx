@@ -7,17 +7,14 @@ interface SolutionSectionProps {
   linkText: string
   linkHref: string
   backgroundImage: string
-  linkIcon: string
 }
 
 export default function SolutionSection({
   linkHref = '',
   linkText,
   title,
-  linkIcon,
   backgroundImage,
 }: SolutionSectionProps) {
-  console.log('backgroundImage', backgroundImage)
   return (
     <section
       style={{ backgroundImage: `url(${backgroundImage})` }}
