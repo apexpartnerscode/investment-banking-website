@@ -15,6 +15,7 @@ interface HighlightsSectionProps {
   card5Text: string
   card6Icon: string
   card6Text: string
+  buttonHref: string
 }
 
 export default function HighlightsSection(props: HighlightsSectionProps) {
@@ -48,7 +49,10 @@ export default function HighlightsSection(props: HighlightsSectionProps) {
           />
         </div>
         <div className={styles.button}>
-          <Button heroButtonHref="" heroButtonText="Saiba mais" />
+          <Button
+            heroButtonHref={props.buttonHref ?? ''}
+            heroButtonText="Saiba mais"
+          />
         </div>
       </div>
     </div>
