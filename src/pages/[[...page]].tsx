@@ -144,6 +144,33 @@ Builder.registerComponent(
 )
 
 Builder.registerComponent(
+  dynamic(() => import('../components/Services')),
+  {
+    name: 'Services',
+    inputs: [
+      { name: 'title', type: 'text' },
+      { name: 'description', type: 'text' },
+      { name: 'imageUrl', type: 'file' },
+      { name: 'thereIsLine', type: 'boolean' },
+      { name: 'imageRightSide', type: 'boolean' },
+      {
+        name: 'list',
+        type: 'list',
+        subFields: [
+          { name: 'service', type: 'string' },
+          { name: 'service1', type: 'string' },
+          { name: 'service2', type: 'string' },
+          { name: 'service3', type: 'string' },
+          { name: 'service4', type: 'string' },
+        ],
+      },
+      { name: 'hexBackgroundColor', type: 'text' },
+    ],
+    image: '',
+  },
+)
+
+Builder.registerComponent(
   dynamic(() => import('../components/Contact')),
   {
     name: 'Contact',
