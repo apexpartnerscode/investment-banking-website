@@ -187,6 +187,56 @@ Builder.registerComponent(
 )
 
 Builder.registerComponent(
+  dynamic(() => import('../components/Accordion')),
+  {
+    name: 'Accordion',
+    inputs: [
+      {
+        name: 'topic',
+        type: 'list',
+        subFields: [
+          { name: 'title', type: 'string' },
+          { name: 'content', type: 'string' },
+        ],
+      },
+      {
+        name: 'topic1',
+        type: 'list',
+        subFields: [
+          { name: 'title', type: 'string' },
+          { name: 'content', type: 'string' },
+        ],
+      },
+      {
+        name: 'topic2',
+        type: 'list',
+        subFields: [
+          { name: 'title', type: 'string' },
+          { name: 'content', type: 'string' },
+        ],
+      },
+      {
+        name: 'topic3',
+        type: 'list',
+        subFields: [
+          { name: 'title', type: 'string' },
+          { name: 'content', type: 'string' },
+        ],
+      },
+      {
+        name: 'topic4',
+        type: 'list',
+        subFields: [
+          { name: 'title', type: 'string' },
+          { name: 'content', type: 'string' },
+        ],
+      },
+    ],
+    image: '',
+  },
+)
+
+Builder.registerComponent(
   dynamic(() => import('../components/WhoWeAre')),
   {
     name: 'WhoWeAre',

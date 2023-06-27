@@ -1,0 +1,56 @@
+.wrapper {
+  background-color: var(--gray-700);
+  width: 100%;
+}
+
+.content {
+  max-width: 940px;
+  width: 100%;
+  margin: 4.5rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.titleWrapper {
+  background-color: var(--white);
+  width: 100%;
+  padding: 1.25rem 36px;
+  cursor: pointer;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--secondary);
+  font-size: 1rem;
+  font-weight: 800;
+  transition: all 3s;
+}
+
+.title.active {
+  transition: all 3s;
+}
+
+.icon {
+  color: var(--secondary);
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.contentWrapper {
+  background: #ffffff99;
+  padding: 2rem;
+  transition: all 3s;
+}
+
+.contentWrapper.active {
+  transition: all 3s;
+}
+
+.contentValue {
+  max-width: 50rem;
+  color: var(--primary);
+  font-size: 0.875rem;
+}
