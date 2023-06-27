@@ -16,6 +16,15 @@ export default function WhoWeAre({ image }: WhoWeAreProps) {
           soluções de M&A e mercado de capitais de alto nível, customizadas às
           necessidades e contexto de nossos clientes.
         </h2>
+        <div className={styles.imageMobile}>
+          <Image
+            src={image}
+            className={styles.apexDoor}
+            alt="apex door"
+            width={315}
+            height={224}
+          />
+        </div>
         <p className={styles.description}>
           Nossa abordagem combina excelência técnica, experiência negocial,
           discrição, independência e agilidade.

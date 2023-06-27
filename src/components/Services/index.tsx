@@ -24,12 +24,19 @@ export default function Services({
   linkName,
   linkUrl,
 }: ServicesProps) {
-  const flexDirection = imageRightSide ? `row-reverse` : `row`
+  let FlexDirection = imageRightSide ? `row-reverse` : `row`
+  // get width of the window and change FlexDirection if width is less than 940px
+  if (typeof window !== 'undefined') {
+    if (window.innerWidth < 940) {
+      FlexDirection = 'column'
+    }
+  }
+
   return (
     <div style={{ backgroundColor: `${hexBackgroundColor || '#fff'}` }}>
       <div
         className={styles.wrapper}
-        style={{ flexDirection: `${flexDirection}` }}
+        style={{ flexDirection: `${FlexDirection}` }}
       >
         <div className={styles.imageContainer}>
           <Image

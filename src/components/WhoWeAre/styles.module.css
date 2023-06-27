@@ -48,3 +48,40 @@
 .contactLink:hover {
   color: var(--primary);
 }
+
+.imageMobile {
+  display: none;
+}
+
+@media (max-width: 940px) {
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 1.5rem;
+  }
+
+  .image {
+    display: none;
+  }
+
+  .imageMobile {
+    display: block;
+  }
+
+  .apexDoor {
+    margin-top: 1rem;
+    width: 100%;
+    object-fit: cover;
+
+  }
+
+  .title {
+    max-width: 100%;
+    font-size: 18px;
+  }
+
+  .texts {
+    max-width: 100%;
+    margin-top: 2rem;
+  }
+}

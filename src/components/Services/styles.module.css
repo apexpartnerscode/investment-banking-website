@@ -41,6 +41,29 @@
   margin: 0 auto;
 }
 
-.link {
+@media (max-width: 940px) {
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 1.5rem;
+  }
 
+  .content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .imageContainer {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .image {
+    width: 315px;
+    height: 315px;
+  }
+
+  .line {
+    max-width: 100%;
+  }
 }

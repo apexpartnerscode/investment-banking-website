@@ -113,7 +113,7 @@ export default function Footer({
             </div>
           </div>
         </div>
-        <hr />
+        <hr className={styles.line} />
         <div className={styles.contacts}>
           <div>
             <h5 className={styles.footerSubTitle}>Fale Conosco</h5>
@@ -125,7 +125,7 @@ export default function Footer({
             <p className={styles.email}>{ouvidoriaEmail}</p>
           </div>
         </div>
-        <hr />
+        <hr className={styles.line} />
         <div className={styles.copyrights}>
           <p>{copyWriteYear} | Apex</p>
         </div>

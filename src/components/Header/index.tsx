@@ -72,9 +72,9 @@ export default function Header(props: HeaderProps) {
         aria-label="Mobile Menu"
       >
         {isMobileMenuOpen ? (
-          <HiMenu size={30} color="#000" />
+          <AiOutlineClose size={30} color="#000" />
         ) : (
-          <AiOutlineClose size={30} color="#fff" />
+          <HiMenu size={30} color="#000" />
         )}
       </div>
 

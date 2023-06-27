@@ -54,3 +54,21 @@
   color: var(--primary);
   font-size: 0.875rem;
 }
+
+@media (max-width: 940px) {
+  .content {
+    padding-inline: 1.5rem;
+  }
+
+  .title {
+    font-size: 10px;
+  }
+
+  .icon {
+    font-size: 1.5rem;
+  }
+
+  .titleWrapper {
+    padding-inline: 16px;
+  }
+}

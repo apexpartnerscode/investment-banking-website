@@ -75,3 +75,62 @@
   margin-top: 2.5rem;
   text-align: center;
 }
+
+@media (max-width: 940px) {
+  .logo {
+    text-align: center;
+  }
+
+  .footerLinks {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3.5rem;
+    margin: 32px 24px;
+  }
+
+  .contacts {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 32px;
+    margin: 2rem 1.5rem;
+  }
+
+  .footerSubTitle {
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .email {
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .phone {
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .linksList {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .link {
+    text-align: center;
+  }
+
+  .contacts {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .line {
+    display: none;
+  }
+
+}
+

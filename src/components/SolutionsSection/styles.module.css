@@ -38,3 +38,12 @@
 .link:hover {
   color: var(--primary);
 }
+
+@media (max-width: 940px) {
+  .wrapper {
+    padding: 0 1.5rem;
+  }
+  .title {
+    font-size: 1.75rem;
+  }
+}

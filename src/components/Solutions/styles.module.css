@@ -76,3 +76,37 @@
   font-size: 1rem;
   font-weight: 800;
 }
+
+@media (max-width: 940px) {
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 1.5rem;
+  }
+
+  .title {
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+    font-size: 24px;
+  }
+
+  .description {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+  .solutions {
+    max-width: 100%;
+  }
+
+  .solutionBox {
+    padding-inline: 0.75rem;
+  }
+
+  .whiteText {
+    font-size: 10px;
+  }
+
+  .blueText {
+    font-size: 10px;
+  }
+}

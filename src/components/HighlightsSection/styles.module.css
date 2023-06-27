@@ -22,3 +22,17 @@
   align-items: center;
   margin-top: 5.5rem;
 }
+
+@media (max-width: 940px) {
+  .highlightsGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .button {
+    margin-block: 2.5rem;
+  }
+
+}

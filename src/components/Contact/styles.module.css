@@ -74,3 +74,38 @@
 .sendButton {
   margin-top: 2.25rem;
 }
+
+@media (max-width: 940px) {
+  .formWrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 58.75rem;
+    margin: 8rem auto;
+  }
+
+  .textWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0 1.5rem;
+    gap: 2rem;
+  }
+
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    width: 80%;
+    gap: 24px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+}
