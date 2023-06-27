@@ -17,6 +17,7 @@ export default function Contact({
   contactPhoneTitle,
   contactPhoneDescription,
   title,
+  description,
 }: ContactProps) {
   return (
     <section className={styles.formWrapper}>
@@ -27,6 +28,7 @@ export default function Contact({
           <p className={styles.contactMailDescription}>
             {contactPhoneDescription}
           </p>
+          <p className={styles.contactMailDescription}>{description}</p>
         </div>
         <div className={styles.contactMail}>
           <h4 className={styles.contactMailTile}>{contactMailTitle}</h4>
