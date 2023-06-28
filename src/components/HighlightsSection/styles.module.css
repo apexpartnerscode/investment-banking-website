@@ -1,19 +1,17 @@
 .highlightsSection {
   background-color: var(--gray-300);
-  min-height: 60rem;
+  padding-block: 72px;
 }
 
 .highlightsSectionContent {
   max-width: 940px;
   margin: 0 auto;
-  margin-top: 96px;
 }
 
 .highlightsGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 1.5rem;
-  row-gap: 3.4375rem;
+  gap: 1.5rem;
 }
 
 .button {
@@ -23,16 +21,30 @@
   margin-top: 5.5rem;
 }
 
+.highlightsMobile {
+  display: none;
+}
+
 @media (max-width: 940px) {
   .highlightsGrid {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    align-items: center;
+    display: none;
+  }
+
+  .highlightsMobile {
+    display: block;
+    padding: 24px;
   }
 
   .button {
-    margin-block: 2.5rem;
+    margin-top: 1.75rem;
+  }
+
+  .swiperSlide {
+    max-width: 320px;
+  }
+
+  .swiperContainer {
+    padding-bottom: 48px;
   }
 
 }

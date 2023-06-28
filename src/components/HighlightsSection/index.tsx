@@ -1,6 +1,12 @@
 import Button from '../Button'
 import HighlightCard from '../HighlightCard'
 import styles from './styles.module.css'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Pagination } from 'swiper'
+
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
 
 interface HighlightsSectionProps {
   card1Icon: string
@@ -47,6 +53,53 @@ export default function HighlightsSection(props: HighlightsSectionProps) {
             cardIcon={props.card6Icon}
             cardText={props.card6Text}
           />
+        </div>
+        <div className={styles.highlightsMobile}>
+          <Swiper
+            pagination={{
+              dynamicBullets: true,
+            }}
+            slidesPerView={'auto'}
+            modules={[Pagination]}
+            className={styles.swiperContainer}
+          >
+            <SwiperSlide className={styles.swiperSlide}>
+              <HighlightCard
+                cardIcon={props.card1Icon}
+                cardText={props.card1Text}
+              />
+            </SwiperSlide>
+            <SwiperSlide className={styles.swiperSlide}>
+              <HighlightCard
+                cardIcon={props.card2Icon}
+                cardText={props.card2Text}
+              />
+            </SwiperSlide>
+            <SwiperSlide className={styles.swiperSlide}>
+              <HighlightCard
+                cardIcon={props.card3Icon}
+                cardText={props.card3Text}
+              />
+            </SwiperSlide>
+            <SwiperSlide className={styles.swiperSlide}>
+              <HighlightCard
+                cardIcon={props.card4Icon}
+                cardText={props.card4Text}
+              />
+            </SwiperSlide>
+            <SwiperSlide className={styles.swiperSlide}>
+              <HighlightCard
+                cardIcon={props.card5Icon}
+                cardText={props.card5Text}
+              />
+            </SwiperSlide>
+            <SwiperSlide className={styles.swiperSlide}>
+              <HighlightCard
+                cardIcon={props.card6Icon}
+                cardText={props.card6Text}
+              />
+            </SwiperSlide>
+          </Swiper>
         </div>
         <div className={styles.button}>
           <Button
