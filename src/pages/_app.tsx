@@ -1,7 +1,9 @@
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
-import RootLayout from './layout'
+import { Manrope } from 'next/font/google'
+
+const manrope = Manrope({ subsets: ['latin'] })
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -14,9 +16,9 @@ export default function App({ Component, pageProps }: AppProps) {
           financeiras personalizadas para pessoas e organizações de espírito empreendedor."
         ></meta>
       </Head>
-      <RootLayout>
+      <main className={manrope.className}>
         <Component {...pageProps} />
-      </RootLayout>
+      </main>
     </>
   )
 }
