@@ -43,9 +43,10 @@
 
 @media (max-width: 940px) {
   .wrapper {
-    flex-direction: column !important;
+    flex-direction: column-reverse !important;
     align-items: center;
     padding-inline: 1.5rem;
+    margin-bottom: 3rem;
   }
 
   .content {
@@ -59,11 +60,11 @@
   }
 
   .image {
-    width: 315px;
-    height: 315px;
+    width: 100%;
+    object-fit: contain;
   }
 
   .line {
-    max-width: 100%;
+    max-width: 85%;
   }
 }
