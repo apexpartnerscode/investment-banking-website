@@ -30,8 +30,8 @@ export default async function sendEmail(request: NextRequest, response: any) {
       recipients: {
         to: [
           {
-            address: 'rochas@apexpartners.com.br',
-            displayName: 'Stevison Rocha',
+            address: 'ib@apexpartners.com.br',
+            displayName: 'IB Apex Partners',
           },
         ],
       },
