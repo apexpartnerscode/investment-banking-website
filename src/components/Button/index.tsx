@@ -5,12 +5,14 @@ interface ButtonProps {
   heroButtonText: string
   heroButtonHref: string
   linkOrButton?: 'link' | 'button'
+  onClick?: (e: any) => void
 }
 
 export default function Button({
   heroButtonText,
   heroButtonHref = '',
   linkOrButton = 'link',
+  onClick,
 }: ButtonProps) {
   return (
     <>
@@ -19,7 +21,11 @@ export default function Button({
           {heroButtonText}
         </Link>
       ) : (
-        <button type="submit" className={styles.heroButtonText}>
+        <button
+          onClick={onClick}
+          type="submit"
+          className={styles.heroButtonText}
+        >
           {heroButtonText}
         </button>
       )}
