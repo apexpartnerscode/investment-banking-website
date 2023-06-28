@@ -61,11 +61,12 @@
   }
 
   .title {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .icon {
     font-size: 1.5rem;
+    padding-left: 1rem;
   }
 
   .titleWrapper {

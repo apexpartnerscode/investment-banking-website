@@ -98,15 +98,11 @@
     max-width: 100%;
   }
 
-  .solutionBox {
-    padding-inline: 0.75rem;
-  }
-
   .whiteText {
-    font-size: 10px;
+    font-size: 13px;
   }
 
   .blueText {
-    font-size: 10px;
+    font-size: 13px;
   }
 }
