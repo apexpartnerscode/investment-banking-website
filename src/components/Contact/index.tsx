@@ -29,7 +29,9 @@ export default function Contact({
   // const [loading, setLoading] = useState(false)
 
   function handleSubmit(event: any) {
-    event.preventDefault()
+    if (name === '' || email === '' || phone === '' || message === '') {
+      return
+    }
     console.log(name, email, phone, message)
   }
 
