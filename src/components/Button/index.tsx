@@ -2,7 +2,10 @@ import Link from 'next/link'
 import styles from './styles.module.css'
 import { Manrope } from 'next/font/google'
 
-const manrope = Manrope({ subsets: ['latin'] })
+const manrope = Manrope({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800'],
+})
 
 interface ButtonProps {
   heroButtonText: string
@@ -18,16 +21,19 @@ export default function Button({
   onClick,
 }: ButtonProps) {
   return (
-    <div className={manrope.className}>
+    <div>
       {linkOrButton === 'link' ? (
-        <Link href={heroButtonHref} className={styles.heroButtonText}>
+        <Link
+          href={heroButtonHref}
+          className={`${manrope.className} ${styles.heroButtonText}`}
+        >
           {heroButtonText}
         </Link>
       ) : (
         <button
           onClick={onClick}
           type="submit"
-          className={styles.heroButtonText}
+          className={`${manrope.className} ${styles.heroButtonText}`}
         >
           {heroButtonText}
         </button>
