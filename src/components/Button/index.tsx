@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styles from './styles.module.css'
 
 interface ButtonProps {
@@ -16,9 +17,9 @@ export default function Button({
   return (
     <div>
       {linkOrButton === 'link' ? (
-        <a href={heroButtonHref} className={styles.heroButtonText}>
+        <Link href={heroButtonHref} className={styles.heroButtonText}>
           {heroButtonText}
-        </a>
+        </Link>
       ) : (
         <button
           onClick={onClick}
