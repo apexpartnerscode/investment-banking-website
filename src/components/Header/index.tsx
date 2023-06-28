@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
 import Link from 'next/link'
+import styles from './styles.module.css'
 import Image from 'next/image'
 import { HiMenu } from 'react-icons/hi'
 import { AiOutlineClose } from 'react-icons/ai'
-import styles from './styles.module.css'
+import { useState } from 'react'
 
 interface HeaderProps {
   link1Name: string
@@ -37,75 +37,81 @@ export default function Header(props: HeaderProps) {
           className={styles.logo}
         />
       </Link>
-      <nav className={`${styles.nav} ${isMobileMenuOpen ? styles.active : ''}`}>
+      <nav>
         <ul className={styles.linksContainer}>
           <li>
-            <Link className={styles.link} href={props.link1Href ?? ''}>
+            <Link className={styles.link} href={props.link1Href ?? ''} passHref>
               {props.link1Name}
             </Link>
           </li>
           <li>
-            <Link className={styles.link} href={props.link2Href ?? ''}>
+            <Link className={styles.link} href={props.link2Href ?? ''} passHref>
               {props.link2Name}
             </Link>
           </li>
           <li>
-            <Link className={styles.link} href={props.link3Href ?? ''}>
+            <Link className={styles.link} href={props.link3Href ?? ''} passHref>
               {props.link3Name}
             </Link>
           </li>
           <li>
-            <Link className={styles.link} href={props.link4Href ?? ''}>
+            <Link className={styles.link} href={props.link4Href ?? ''} passHref>
               {props.link4Name}
             </Link>
           </li>
           <li>
-            <Link className={styles.link} href={props.link5Href ?? ''}>
+            <Link className={styles.link} href={props.link5Href ?? ''} passHref>
               {props.link5Name}
             </Link>
           </li>
         </ul>
       </nav>
-      <div
-        onClick={toggleMobileMenu}
-        className={styles.mobileMenuIcon}
-        aria-label="Mobile Menu"
-      >
-        {isMobileMenuOpen ? (
-          <AiOutlineClose size={30} color="#000" />
-        ) : (
-          <HiMenu size={30} color="#000" />
-        )}
-      </div>
+      <button onClick={toggleMobileMenu} className={styles.mobileMenuIcon}>
+        <HiMenu size={30} color="#000" />
+      </button>
 
       <div
         className={`${styles.mobileMenu} ${
           isMobileMenuOpen ? styles.active : ''
         }`}
       >
+        <div className={styles.mobileMenuHeader}>
+          <Link href="/">
+            <Image
+              src="/images/Apex 10 anos - Branco.png"
+              alt="Logo"
+              width={150}
+              height={40.2}
+              className={styles.mobileMenuLogo}
+            />
+          </Link>
+          <div onClick={toggleMobileMenu} className={styles.closeBtn}>
+            <AiOutlineClose size={30} color="#fff" />
+          </div>
+        </div>
         <ul className={styles.mobileMenuLinksContainer}>
           <li>
-            <Link className={styles.link} href={props.link1Href ?? ''}>
+            <Link className={styles.link} href={props.link1Href ?? ''} passHref>
               {props.link1Name}
             </Link>
           </li>
           <li>
-            <Link className={styles.link} href={props.link2Href ?? ''}>
+            <Link className={styles.link} href={props.link2Href ?? ''} passHref>
               {props.link2Name}
             </Link>
           </li>
           <li>
-            <Link className={styles.link} href={props.link3Href ?? ''}>
+            <Link className={styles.link} href={props.link3Href ?? ''} passHref>
               {props.link3Name}
             </Link>
           </li>
           <li>
-            <Link className={styles.link} href={props.link4Href ?? ''}>
+            <Link className={styles.link} href={props.link4Href ?? ''} passHref>
               {props.link4Name}
             </Link>
           </li>
           <li>
-            <Link className={styles.link} href={props.link5Href ?? ''}>
+            <Link className={styles.link} href={props.link5Href ?? ''} passHref>
               {props.link5Name}
             </Link>
           </li>
