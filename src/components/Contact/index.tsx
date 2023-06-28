@@ -2,8 +2,7 @@ import { useState } from 'react'
 import Button from '../Button'
 import styles from './styles.module.css'
 import InputMask from 'react-input-mask'
-// import { LoadingOutlined } from '@ant-design/icons'
-// import { Spin } from 'antd'
+import { notification } from 'antd'
 
 interface ContactProps {
   title: string
@@ -13,6 +12,8 @@ interface ContactProps {
   contactPhoneTitle: string
   contactPhoneDescription: string
 }
+
+type NotificationType = 'success' | 'info' | 'warning' | 'error'
 
 export default function Contact({
   contactMailDescription,
@@ -26,17 +27,52 @@ export default function Contact({
   const [email, setEmail] = useState('')
   const [phone, setPhone] = useState('')
   const [message, setMessage] = useState('')
-  // const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(false)
+  const [api, contextHolder] = notification.useNotification()
+
+  const openNotificationWithIcon = (type: NotificationType) => {
+    const reponseToUser =
+      type === 'success'
+        ? 'Obrigado por entrar em contato. Em breve nosso time entrará em contato com você.'
+        : 'Ocorreu um erro ao enviar sua mensagem. Por favor, tente novamente ou entre em contato pelo telefone (27) 3024-9999'
+    api[type]({
+      message: 'Recebemos sua mensagem',
+      description: reponseToUser,
+    })
+  }
 
   function handleSubmit(event: any) {
     if (name === '' || email === '' || phone === '' || message === '') {
       return
     }
-    console.log(name, email, phone, message)
+    event.preventDefault()
+    setLoading(true)
+    const response = fetch('/api/sendEmail', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ name, email, phone, message }),
+    })
+    response.then((res) => {
+      console.log(res)
+      if (res.status === 200) {
+        setName('')
+        setEmail('')
+        setPhone('')
+        setMessage('')
+        setLoading(false)
+        openNotificationWithIcon('success')
+      } else {
+        setLoading(false)
+        openNotificationWithIcon('error')
+      }
+    })
   }
 
   return (
     <section className={styles.formWrapper}>
+      {contextHolder}
       <div className={styles.textWrapper}>
         <h2 className={styles.title}>{title}</h2>
         <div className={styles.contactMail}>
@@ -134,6 +170,7 @@ export default function Contact({
             linkOrButton="button"
             heroButtonHref="#"
             heroButtonText="Fale conosco"
+            loading={loading}
           />
         </div>
       </form>
