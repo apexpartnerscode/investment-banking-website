@@ -1,5 +1,8 @@
 import Link from 'next/link'
 import styles from './styles.module.css'
+import { Manrope } from 'next/font/google'
+
+const manrope = Manrope({ subsets: ['latin'] })
 
 interface ButtonProps {
   heroButtonText: string
@@ -15,7 +18,7 @@ export default function Button({
   onClick,
 }: ButtonProps) {
   return (
-    <>
+    <div className={manrope.className}>
       {linkOrButton === 'link' ? (
         <Link href={heroButtonHref} className={styles.heroButtonText}>
           {heroButtonText}
@@ -29,6 +32,6 @@ export default function Button({
           {heroButtonText}
         </button>
       )}
-    </>
+    </div>
   )
 }
