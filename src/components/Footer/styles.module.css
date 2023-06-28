@@ -28,7 +28,7 @@
   font-size: 1.125rem;
   font-weight: 600;
   padding-bottom: 1rem;
-  border-bottom: 1px solid var(--white);
+  border-bottom: 0.0625rem solid var(--white);
   margin-bottom: 1rem;
 }
 
@@ -84,12 +84,12 @@
   .footerLinks {
     grid-template-columns: repeat(1, 1fr);
     gap: 3.5rem;
-    margin: 32px 24px;
+    margin: 2rem 1.5rem;
   }
 
   .contacts {
     grid-template-columns: repeat(1, 1fr);
-    gap: 32px;
+    gap: 2rem;
     margin: 2rem 1.5rem;
   }
 

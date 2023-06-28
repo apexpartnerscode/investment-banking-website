@@ -4,7 +4,7 @@
 }
 
 .content {
-  max-width: 940px;
+  max-width: 58.75rem;
   width: 100%;
   margin: 4.5rem auto;
   display: flex;
@@ -15,7 +15,7 @@
 .titleWrapper {
   background-color: var(--white);
   width: 100%;
-  padding: 1.25rem 36px;
+  padding: 1.25rem 2.25rem;
   cursor: pointer;
 }
 
@@ -61,7 +61,7 @@
   }
 
   .title {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 
   .icon {
@@ -70,6 +70,6 @@
   }
 
   .titleWrapper {
-    padding-inline: 16px;
+    padding-inline: 1rem;
   }
 }

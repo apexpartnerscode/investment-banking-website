@@ -1,10 +1,10 @@
 .highlightsSection {
   background-color: var(--gray-300);
-  padding-block: 72px;
+  padding-block: 4.5rem;
 }
 
 .highlightsSectionContent {
-  max-width: 940px;
+  max-width: 58.75rem;
   margin: 0 auto;
 }
 
@@ -32,7 +32,7 @@
 
   .highlightsMobile {
     display: block;
-    padding: 24px;
+    padding: 1.5rem;
   }
 
   .button {
@@ -44,7 +44,7 @@
   }
 
   .swiperContainer {
-    padding-bottom: 48px;
+    padding-bottom: 3rem;
   }
 
 }
