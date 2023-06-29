@@ -68,8 +68,11 @@
 }
 
 @media (max-width: 940px) {
+  .logo {
+    margin-left: 1.5rem;
+  }
   .mobileMenuIcon {
-    margin-right: 3.375rem;
+    margin-right: 1.5rem;
     display: block;
     cursor: pointer;
     border: none;
@@ -96,7 +99,7 @@
   .closeBtn {
     position: absolute;
     top: 2.25rem;
-    right: 3.25rem;
+    right: 1.5rem;
     color: var(--white);
     font-size: 1.5rem;
     cursor: pointer;
@@ -106,7 +109,7 @@
   .mobileMenuLogo {
     position: absolute;
     top: 2rem;
-    left: 3.25rem;
+    left: 1.5rem;
     color: var(--white);
     cursor: pointer;
   }
